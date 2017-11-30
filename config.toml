@@ -1,0 +1,10 @@
+baseurl = "https://sodiu.me/"
+languageCode = "ja"
+title = "Naf-bloh"
+disqusShortname = "Naf-blog"
+
+[Params]
+twitter = "https://twitter.com/bou_n_shi"
+github = "https://github.com/bounshi"
+showsRSS = true
+copyright = "Written by Naf"
