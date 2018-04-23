@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  
+  <meta charset="UTF-8">
+  <title>
+    PeerTubeのススメ | Naf-blog
+  </title>
+
+
+  
+  <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
+
+  
+  <link rel="canonical" href="https://sodiu.me/post/peertube-no-susume/"/>
+
+  
+  <link rel="stylesheet" href="https://sodiu.me/css/sanitize.css">
+  <link rel="stylesheet" href="https://sodiu.me/css/responsive.css">
+  <link rel="stylesheet" href="https://sodiu.me/css/highlight_monokai.css">
+  <link rel="stylesheet" href="https://sodiu.me/css/theme.css">
+  <link rel="stylesheet" href="https://sodiu.me/css/custom.css">
+  
+  
+  <link href="https://sodiu.me/index.xml" rel="alternate" type="application/rss+xml" title="Naf-blog" />
+  <link href="https://sodiu.me/index.xml" rel="feed" type="application/rss+xml" title="Naf-blog" />
+
+  
+  
+
+
+</head>
+
+
+
+<body>
+<div class="container">
+
+  
+  <header role="banner">
+    <div class="row gutters">
+      <div id="site-title" class="col span_6">
+        <h1><a href="https://sodiu.me/">Naf-blog</a></h1>
+        
+      </div>
+      <div id="social" class="col span_6">
+        <ul>
+          <li><a href="https://twitter.com/bou_n_shi" target="_blank">Twitter</a></li>
+          
+          <li><a href="https://github.com/bounshi" target="_blank">GitHub</a></li>
+          <li><a href="https://sodiu.me/index.xml" type="application/rss+xml" target="_blank">RSS</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+  
+  <main id="single" role="main">
+    <div class="article-header">
+      <h1>PeerTubeのススメ</h1>
+      <div class="meta">
+        Mar 20, 2018 &nbsp;
+        
+      </div>
+    </div>
+    <article>
+      
+
+<h1 id="peertubeのススメ">PeerTubeのススメ</h1>
+
+<p>Nafです。<br />
+<a href="https://github.com/Chocobozzz/PeerTube">PeerTube</a>を建ててみました。<br />
+建てたのは<a href="https://tube.otogamer.me">ここ</a><br />
+本稿ではPeerTubeのアレソレについて書きます。</p>
+
+<h2 id="what-is-peertube">What is &ldquo;PeerTube&rdquo;?</h2>
+
+<blockquote>
+<p>Federated (ActivityPub) video streaming platform using P2P (BitTorrent) directly in the web browser with WebTorrent.</p>
+</blockquote>
+
+<p>(Google翻訳)</p>
+
+<blockquote>
+<p>P2P（BitTorrent）をWebブラウザでWebTorrentで直接使用するFederated（ActivityPub）ビデオストリーミングプラットフォーム。</p>
+</blockquote>
+
+<p>完全に理解した。</p>
+
+<h2 id="用意したサーバー">用意したサーバー</h2>
+
+<p>他のアプリーケションも同居しているので結構リッチです。</p>
+
+<ul>
+<li>さくらのクラウド 石狩リージョン</li>
+<li>OS: Fedora27</li>
+<li>CPU: 4core</li>
+<li>RAM 4GB</li>
+<li>SSD 100GB</li>
+</ul>
+
+<p>ちゃんと測っていないのでアレですが、平常時でRAMは200MB程使っているみたいです。</p>
+
+<h2 id="建て方">建て方</h2>
+
+<p><a href="https://github.com/Chocobozzz/PeerTube/blob/develop/support/doc/production.md">ここ</a>に書いてます。<br />
+ドキュメントが充実しており、簡単に設置・アップデートできると思われます。</p>
+
+<p>詰まったとこは特にないのですが、nginxを<code>Peertube</code>ユーザーで動かす時のパーミッション設定を忘れずにしましょう。</p>
+
+<h2 id="利点">利点</h2>
+
+<ul>
+<li>ActivityPubを採用しているため、マストドンに流れてくる。</li>
+</ul>
+
+<p>こんな感じで来ます。</p>
+
+<p><img src="https://media.otogamer.me/media/media_attachments/files/000/144/013/original/816dc98bd39bb6d4.png" alt="PeerTube" /></p>
+
+<p>また、動画が埋め込まれるので、Tootの中で動画が見れます。</p>
+
+<p><img src="https://media.otogamer.me/media/media_attachments/files/000/143/904/original/5f5ff58a4611278d.png" alt="PeerTube" /></p>
+
+<ul>
+<li>軽い</li>
+</ul>
+
+<p>最初はエンコードなどで結構重いのかな？と思っていましたが、意外と軽いです。<br />
+また、「動画のエンコードを行なうかどうか」という設定があるのでCPUが貧弱なサーバーでも立ち上げれます。<br />
+エンコードするならCPUのコア数は2以上がおすすめです。</p>
+
+<h2 id="気になるところ">気になるところ</h2>
+
+<ul>
+<li>60fpsの動画をアップロードできない</li>
+</ul>
+
+<p><a href="https://github.com/Chocobozzz/PeerTube/issues/310">Issue</a>にもあるんですが、できません。(30fpsに下げられる)<br />
+試しにエンコ無し設定にして上げてみましたが、プチプチになって駄目でした。<br />
+今後の開発に期待です。</p>
+
+<h2 id="まとめ">まとめ</h2>
+
+<p>あまり建てている人がいなくて寂しいのでみんな建ててください。ハイ。</p>
+
+      
+      
+      
+    </article>
+    
+ <aside><div id="disqus_thread"></div></aside>
+
+<script type="text/javascript">
+     
+    var disqus_shortname = 'Naf-blog';
+
+     
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+  </main>
+  
+  <nav class="pagination-single">
+    
+      <span class="previous">&larr; <a href="https://sodiu.me/post/hostdon-adc-2017/" rel="prev">Hostdonを始めて約6ヵ月経ちました</a></span>
+    
+    
+      <span class="next"><a href="https://sodiu.me/post/otogamer-me-1st/" rel="next">音ゲ丼が約1周年です</a> &rarr;</span>
+    
+  </nav>
+
+
+  
+  <footer role="contentinfo">
+    <div style="text-align:center;">
+      
+      Written by Naf
+    </div>
+  </footer>
+
+
+</div>
+
+<script src="https://sodiu.me/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</body>
+</html>
+

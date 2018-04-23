@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Naf-blog</title>
+    <link>https://sodiu.me/post/</link>
+    <description>Recent content in Posts on Naf-blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>Written by Naf</copyright>
+    <lastBuildDate>Mon, 23 Apr 2018 21:36:49 +0900</lastBuildDate>
+    
+	<atom:link href="https://sodiu.me/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>音ゲ丼が約1周年です</title>
+      <link>https://sodiu.me/post/otogamer-me-1st/</link>
+      <pubDate>Mon, 23 Apr 2018 21:36:49 +0900</pubDate>
+      
+      <guid>https://sodiu.me/post/otogamer-me-1st/</guid>
+      <description>どうも Nafです。
+音ゲ丼ことotogamer.meはドメイン取得日が4月21日、最初のトゥートが4月26日のようです。
+誤字な初トゥート
+ちなみに現在は
+ 総ユーザー数: 376人
+ 投稿数: 45,636 toot
+ 接続インスタンス数: 1,294個
+  らしいです。
+今回は約1周年ということでブログを書くためにArch linuxをデュアルブートしようとしたらその過程で結構詰まり、ブログネタが増えました。
+振り返ってみる 初期のころはほぼ私ぐらいしかおらず、実質お一人様インスタンスだったことを鮮明に覚えています。
+その後、何故か(？？？)新規の方が増えてきて、私がデフォルトの公開範囲を未収載に変えたらアクティブユーザーが(相対的に)増えた気がしてます。
+私の気紛れで色々なことが決まるにもかかわらず、沢山の方に利用して頂き、大変うれしく思います。
+出来た文化(？)  MENDES
+   MENDESとは、beatmaniaIIDX 15 DJ TROOPERSに収録された曲である。俗称「麺です」
+ ニコニコ大百科曰くこうらしいが幤インスタンスでは、その俗称からか主に ラーメン のことを言う。
+稀に変化球として カップラーメン ソース焼きそば その他食べもの 本物のMENDESのリザルト がある。
+ スタバ  主にメシテロ。稀に本物のスタバなときもある。
+また弐寺を設置してあるものもある。
+
+余談だが川崎モアーズ二階のゲーセンはゲーセンしかないのにスタバの案内がある。外階段からスタバに行くのが正攻法らしいが真相は謎である。
+
+おわりに 謎のリンクです
+http://amzn.asia/ePPNP70</description>
+    </item>
+    
+    <item>
+      <title>PeerTubeのススメ</title>
+      <link>https://sodiu.me/post/peertube-no-susume/</link>
+      <pubDate>Tue, 20 Mar 2018 17:15:00 +0900</pubDate>
+      
+      <guid>https://sodiu.me/post/peertube-no-susume/</guid>
+      <description>PeerTubeのススメ Nafです。
+PeerTubeを建ててみました。
+建てたのはここ
+本稿ではPeerTubeのアレソレについて書きます。
+What is &amp;ldquo;PeerTube&amp;rdquo;?  Federated (ActivityPub) video streaming platform using P2P (BitTorrent) directly in the web browser with WebTorrent.
+ (Google翻訳)
+ P2P（BitTorrent）をWebブラウザでWebTorrentで直接使用するFederated（ActivityPub）ビデオストリーミングプラットフォーム。
+ 完全に理解した。
+用意したサーバー 他のアプリーケションも同居しているので結構リッチです。
+ さくらのクラウド 石狩リージョン OS: Fedora27 CPU: 4core RAM 4GB SSD 100GB  ちゃんと測っていないのでアレですが、平常時でRAMは200MB程使っているみたいです。
+建て方 ここに書いてます。
+ドキュメントが充実しており、簡単に設置・アップデートできると思われます。
+詰まったとこは特にないのですが、nginxをPeertubeユーザーで動かす時のパーミッション設定を忘れずにしましょう。
+利点  ActivityPubを採用しているため、マストドンに流れてくる。  こんな感じで来ます。
+また、動画が埋め込まれるので、Tootの中で動画が見れます。
+ 軽い  最初はエンコードなどで結構重いのかな？と思っていましたが、意外と軽いです。
+また、「動画のエンコードを行なうかどうか」という設定があるのでCPUが貧弱なサーバーでも立ち上げれます。
+エンコードするならCPUのコア数は2以上がおすすめです。
+気になるところ  60fpsの動画をアップロードできない  Issueにもあるんですが、できません。(30fpsに下げられる)
+試しにエンコ無し設定にして上げてみましたが、プチプチになって駄目でした。
+今後の開発に期待です。
+まとめ あまり建てている人がいなくて寂しいのでみんな建ててください。ハイ。</description>
+    </item>
+    
+    <item>
+      <title>Hostdonを始めて約6ヵ月経ちました</title>
+      <link>https://sodiu.me/post/hostdon-adc-2017/</link>
+      <pubDate>Fri, 08 Dec 2017 06:16:11 +0900</pubDate>
+      
+      <guid>https://sodiu.me/post/hostdon-adc-2017/</guid>
+      <description>Hostdonを始めて約6ヵ月経ちました これはMastodon Advent Calendorの8日目の記事です
+今回のアドベントカレンダーの内容は「GCPに最強のインスタンスを建てる」と「Hostdon」のどっちにしようか、かなり悩んだのですが、Hostdonについて書こうと思います。
+Hostdonってなに？   Hostdonは端的に説明すると、「Mastodonのホスティングサービス」です。 他に株式会社ホープムーンさんのムトー、 Masto.hostがあります。
+改めまして、Hostdonは
+ 速くて(迅速なアップデート) 安くて(324円/月から) オープンソース  を基本理念とした、Mastodonホスティングサービスです。
+  (今は登録停止中です)
+なぜ作ったの？ ITmediaさんの記事にもあるとおり、当時あった「Mastodon会議」なるもので「マストドンは構築が難しくてなかなか始められない」というようなことを聞いたことがあり、手軽にマストドンインスタンスを構築するサービスがあったら良いなぁと思い、作りました。
+またそのころムトーさんやMasto.hostもホスティングサービスを始めていて、当時の私は「ホスティングサービスも分散させるべきだ」と考え、このサービスを始めました。
+初期は無料だったのですが、やはりお金が厳しく、有料化しました。
+歴史 6月13日 ベータ版としてサービス開始。
+6月14日 応募が100人こえてビックリする。
+7月頃 請求額に驚く。このころからPassengerに切り替えていった。
+8月頃 夏休み期間に決済システムやコントロールパネルを作った。あと電気通信事業者にも登録した。
+9月頃 正式サービス開始！
+12月頃 断続的に登録を停止中。(負荷のため)
+技術的なこと 構成図(サーバー台数とかは適当)  Hostdonで動いてるインスタンスはほぼバニラのままです。
+改造部分は「投稿画面下のお知らせ欄(iframe式)」ぐらいです。
+また、RailsのサーバーにはPumaではなく、「Passenger(Enterprise)」を使用しています。
+これにより、大幅にRAMの使用量を抑えることが可能になりました。
+OSS版でも一定の効果が得ることができると思われます。導入の参考にどうぞ PhusionPassengerでMastodonを動かす
+1つのサーバーで複数のインスタンスを動かす際、.env.productionのredisのNamespace設定をしないとTLが混線し、カオスになります。気を付けましょう。 参考: 1つのサーバーで2つのmastodonインスタンスを動かそうとした話とredis周りのバグっぽいなにか
+まとめ わたしは高校生なのですが、4月から、なんとか調べながらインスタンスを建てたり、管理したりすることができるようになってきました。
+これからは色々大変な予感がしますが、ちょっとずつReactなどの言語に触れられていけたらなぁと考えています。
+内容が薄い気がしますが、読んでくださりありがとうございました。
+追記 今日誕生日です。 Amazon
+今日はガジェオフに参加します。名刺やステッカーが欲しい方はどうぞお声がけください。</description>
+    </item>
+    
+    <item>
+      <title>PhusionPassengerでMastodonを動かす</title>
+      <link>https://sodiu.me/post/passenger-mstdn/</link>
+      <pubDate>Thu, 30 Nov 2017 22:45:26 +0900</pubDate>
+      
+      <guid>https://sodiu.me/post/passenger-mstdn/</guid>
+      <description>PhusionPassengerでMastodonを動かす 手順 1. PhusionPassengerのインストールとNginxのビルド ※Rubyは直コンパイルを想定しています。 ※centos7 fedora26で動作確認済み ※nginxインストール済みの場合はnginxを一回消して下さい
+gem install passenger cd /usr/local/src curl -L -O https://nginx.org/download/nginx-1.13.3.tar.gz tar xofz nginx-1.13.3.tar.gz cd nginx-1.13.3 ./configure --prefix=/etc/nginx --sbin-path=/usr/sbin/nginx --modules-path=/usr/lib64/nginx/modules --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --pid-path=/var/run/nginx.pid --lock-path=/var/run/nginx.lock --http-client-body-temp-path=/var/cache/nginx/client_temp --http-proxy-temp-path=/var/cache/nginx/proxy_temp --http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp --http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp --http-scgi-temp-path=/var/cache/nginx/scgi_temp --user=nginx --group=nginx --with-compat --with-file-aio --with-threads --with-http_addition_module --with-http_auth_request_module --with-http_dav_module --with-http_flv_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_mp4_module --with-http_random_index_module --with-http_realip_module --with-http_secure_link_module --with-http_slice_module --with-http_ssl_module --with-http_stub_status_module --with-http_sub_module --with-http_v2_module --with-mail --with-mail_ssl_module --with-stream --with-stream_realip_module --with-stream_ssl_module --with-stream_ssl_preread_module --add-module=/usr/local/lib/ruby/gems/2.4.0/gems/passenger-enterprise-server-5.1.8/src/nginx_module make make test make install  これでnginxが/etc/nginx以下にインストールされます。 systemdは以下のように設定すると幸せになれます</description>
+    </item>
+    
+  </channel>
+</rss>

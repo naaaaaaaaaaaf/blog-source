@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  
+  <meta charset="UTF-8">
+  <title>
+    Hostdonを始めて約6ヵ月経ちました | Naf-blog
+  </title>
+
+
+  
+  <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
+
+  
+  <link rel="canonical" href="https://sodiu.me/post/hostdon-adc-2017/"/>
+
+  
+  <link rel="stylesheet" href="https://sodiu.me/css/sanitize.css">
+  <link rel="stylesheet" href="https://sodiu.me/css/responsive.css">
+  <link rel="stylesheet" href="https://sodiu.me/css/highlight_monokai.css">
+  <link rel="stylesheet" href="https://sodiu.me/css/theme.css">
+  <link rel="stylesheet" href="https://sodiu.me/css/custom.css">
+  
+  
+  <link href="https://sodiu.me/index.xml" rel="alternate" type="application/rss+xml" title="Naf-blog" />
+  <link href="https://sodiu.me/index.xml" rel="feed" type="application/rss+xml" title="Naf-blog" />
+
+  
+  
+
+
+</head>
+
+
+
+<body>
+<div class="container">
+
+  
+  <header role="banner">
+    <div class="row gutters">
+      <div id="site-title" class="col span_6">
+        <h1><a href="https://sodiu.me/">Naf-blog</a></h1>
+        
+      </div>
+      <div id="social" class="col span_6">
+        <ul>
+          <li><a href="https://twitter.com/bou_n_shi" target="_blank">Twitter</a></li>
+          
+          <li><a href="https://github.com/bounshi" target="_blank">GitHub</a></li>
+          <li><a href="https://sodiu.me/index.xml" type="application/rss+xml" target="_blank">RSS</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+  
+  <main id="single" role="main">
+    <div class="article-header">
+      <h1>Hostdonを始めて約6ヵ月経ちました</h1>
+      <div class="meta">
+        Dec 8, 2017 &nbsp;
+        
+      </div>
+    </div>
+    <article>
+      
+
+<h1 id="hostdonを始めて約6ヵ月経ちました">Hostdonを始めて約6ヵ月経ちました</h1>
+
+<p>これは<a href="https://adventar.org/calendars/2178">Mastodon Advent Calendor</a>の8日目の記事です</p>
+
+<p>今回のアドベントカレンダーの内容は「GCPに最強のインスタンスを建てる」と「Hostdon」のどっちにしようか、かなり悩んだのですが、Hostdonについて書こうと思います。</p>
+
+<h2 id="hostdonってなに">Hostdonってなに？</h2>
+
+<p>
+<figure >
+    
+        <img src="https://media.otogamer.me/media/media_attachments/files/000/077/100/original/b7c4815ff17e59ac.png" />
+    
+    
+</figure>
+
+<a href="https://hostdon.jp">Hostdon</a>は端的に説明すると、「Mastodonのホスティングサービス」です。
+他に<a href="https://free.m.to">株式会社ホープムーンさんのムトー</a>、 <a href="https://masto.host">Masto.host</a>があります。</p>
+
+<p>改めまして、Hostdonは</p>
+
+<ol>
+<li>速くて(迅速なアップデート)</li>
+<li>安くて(324円/月から)</li>
+<li><a href="https://git.auri.ga">オープンソース</a></li>
+</ol>
+
+<p>を基本理念とした、Mastodonホスティングサービスです。</p>
+
+<p>
+<figure >
+    
+        <img src="https://media.otogamer.me/media/media_attachments/files/000/077/145/original/550288db9833fa8e.png" />
+    
+    
+</figure>
+
+(今は登録停止中です)</p>
+
+<h2 id="なぜ作ったの">なぜ作ったの？</h2>
+
+<p>ITmediaさんの<a href="http://www.itmedia.co.jp/news/articles/1706/13/news126.html">記事</a>にもあるとおり、当時あった「Mastodon会議」なるもので「マストドンは構築が難しくてなかなか始められない」というようなことを聞いたことがあり、手軽にマストドンインスタンスを構築するサービスがあったら良いなぁと思い、作りました。</p>
+
+<p>またそのころムトーさんやMasto.hostもホスティングサービスを始めていて、当時の私は「ホスティングサービスも分散させるべきだ」と考え、このサービスを始めました。</p>
+
+<p>初期は無料だったのですが、やはりお金が厳しく、有料化しました。</p>
+
+<h2 id="歴史">歴史</h2>
+
+<p>6月13日 ベータ版としてサービス開始。</p>
+
+<p>6月14日 応募が100人こえてビックリする。</p>
+
+<p>7月頃   請求額に驚く。このころからPassengerに切り替えていった。</p>
+
+<p>8月頃   夏休み期間に決済システムやコントロールパネルを作った。あと電気通信事業者にも登録した。</p>
+
+<p>9月頃   正式サービス開始！</p>
+
+<p>12月頃  断続的に登録を停止中。(負荷のため)</p>
+
+<h2 id="技術的なこと">技術的なこと</h2>
+
+<p>構成図(サーバー台数とかは適当)
+
+<figure >
+    
+        <img src="https://media.otogamer.me/media/media_attachments/files/000/077/811/original/10da0e8a7aeed6d8.jpeg" />
+    
+    
+</figure>
+</p>
+
+<p>Hostdonで動いてるインスタンスはほぼバニラのままです。</p>
+
+<p>改造部分は「投稿画面下のお知らせ欄(iframe式)」ぐらいです。</p>
+
+<p>また、RailsのサーバーにはPumaではなく、「Passenger(Enterprise)」を使用しています。</p>
+
+<p>これにより、大幅にRAMの使用量を抑えることが可能になりました。</p>
+
+<p>OSS版でも一定の効果が得ることができると思われます。導入の参考にどうぞ
+<a href="https://sodiu.me/post/passenger-mstdn/">PhusionPassengerでMastodonを動かす</a></p>
+
+<p>1つのサーバーで複数のインスタンスを動かす際、.env.productionのredisのNamespace設定をしないとTLが混線し、カオスになります。気を付けましょう。
+参考: <a href="https://qiita.com/dasoran/items/38e52fc596365e783754">1つのサーバーで2つのmastodonインスタンスを動かそうとした話とredis周りのバグっぽいなにか</a></p>
+
+<h2 id="まとめ">まとめ</h2>
+
+<p>わたしは高校生なのですが、4月から、なんとか調べながらインスタンスを建てたり、管理したりすることができるようになってきました。</p>
+
+<p>これからは色々大変な予感がしますが、ちょっとずつReactなどの言語に触れられていけたらなぁと考えています。</p>
+
+<p>内容が薄い気がしますが、読んでくださりありがとうございました。</p>
+
+<h2 id="追記">追記</h2>
+
+<p>今日誕生日です。
+<a href="http://amzn.asia/7kGrfJd">Amazon</a></p>
+
+<p>今日はガジェオフに参加します。名刺やステッカーが欲しい方はどうぞお声がけください。</p>
+
+      
+      
+      
+    </article>
+    
+ <aside><div id="disqus_thread"></div></aside>
+
+<script type="text/javascript">
+     
+    var disqus_shortname = 'Naf-blog';
+
+     
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+  </main>
+  
+  <nav class="pagination-single">
+    
+      <span class="previous">&larr; <a href="https://sodiu.me/post/passenger-mstdn/" rel="prev">PhusionPassengerでMastodonを動かす</a></span>
+    
+    
+      <span class="next"><a href="https://sodiu.me/post/peertube-no-susume/" rel="next">PeerTubeのススメ</a> &rarr;</span>
+    
+  </nav>
+
+
+  
+  <footer role="contentinfo">
+    <div style="text-align:center;">
+      
+      Written by Naf
+    </div>
+  </footer>
+
+
+</div>
+
+<script src="https://sodiu.me/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</body>
+</html>
+
