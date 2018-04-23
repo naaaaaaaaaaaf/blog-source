@@ -1,9 +1,9 @@
 ---
 title: "PhusionPassengerでMastodonを動かす"
-date: 2017-11-30T22:07:56+09:00
-draft: true
+date: 2017-11-30T22:45:26+09:00
 slug: "passenger-mstdn"
 ---
+
 # PhusionPassengerでMastodonを動かす
 ## 手順
 ### 1. PhusionPassengerのインストールとNginxのビルド

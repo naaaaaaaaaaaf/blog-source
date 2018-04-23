@@ -1,8 +1,10 @@
 baseurl = "https://sodiu.me/"
+theme = "angels-ladder"
 languageCode = "ja"
-title = "Naf-bloh"
+title = "Naf-blog"
 disqusShortname = "Naf-blog"
-
+canonifyurls = true
+publishdir = "public"
 [Params]
 twitter = "https://twitter.com/bou_n_shi"
 github = "https://github.com/bounshi"
