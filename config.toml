@@ -6,7 +6,7 @@ disqusShortname = "Naf-blog"
 canonifyurls = true
 publishdir = "public"
 [Params]
-twitter = "https://twitter.com/bou_n_shi"
-github = "https://github.com/bounshi"
+mastodon = "https://otogamer.me/@naf"
+github = "https://github.com/naaaaaaaaaaaf"
 showsRSS = true
 copyright = "Written by Naf"
