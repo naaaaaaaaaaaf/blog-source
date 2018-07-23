@@ -2,7 +2,7 @@ baseurl = "https://sodiu.me/"
 theme = "angels-ladder"
 languageCode = "ja"
 title = "Naf-blog"
-disqusShortname = "Naf-blog"
+disqusShortname = "sodiume"
 canonifyurls = true
 publishdir = "public"
 [Params]
